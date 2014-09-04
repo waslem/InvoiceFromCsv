@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Spire.PDF</id>
+    <version>3.1.24</version>
+    <title>Spire.PDF for .NET</title>
+    <authors>Administrator</authors>
+    <owners>Administrator</owners>
+    <licenseUrl>http://www.e-iceblue.com/Knowledgebase/Licensing/License-Agreement.html</licenseUrl>
+    <projectUrl>http://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html</projectUrl>
+    <iconUrl>http://www.e-iceblue.com/images/product_logo/product_buy/pdfnet.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Spire.PDF for .NET is a versatile PDF library that enables software developers to generate, edit, read and manipulate PDF files within their own .NET applications. As a standalone PDF component, Spire.PDF for .NET provides users an incredible wealth of features without installing Adobe Acrobat. This component is completely written in C#, but also supports VB.NET, Windows Forms and ASP.NET. 
+With the Spire.PDF for .NET API, you can get the ability to read PDF text and image even attachments with high efficiency. Even the special content such as language written from right to left can be extracted such as Herbrew and Arabic. Other basic features such as text, image, table, shapes, hyperlinks, bookmark, headings, footnotes, lists, form fields, pagination, booklet barcode, attachments, transparency, annotations, actions, overlay etc all work great for users. As for security, Spire.PDF for .NET enables you to protect your PDF files by passwords and digital signature.</description>
+    <summary>This package is designed to introduce developers a .NET PDF application Spire.PDF for .NET. This PDF application enables users to create, read, edit and maniplate PDF files with high efficiency.</summary>
+    <releaseNotes>Spire.PDF 3.1.24
+Improve RAM consuming performance on converting XPS to PDF.
+Improve time taking performance on converting PDF to Image.
+Fix the error "Invalid contents array" when saving to pdf file after adding background image into pdf.
+Fix the issue that some text was lost when printing PDF.
+Fix the issue that the content was twisted when printing PDF.
+Fix the issue that some characters were overlapping each other when printing PDF.
+Fix the issue that red boxes were missing when converting PDF to Image.
+Fix finding text issue in PDF was converted from DOCX by spire.doc.
+Fix the error "An item with the same key has already been added" when extracting text from PDF.
+
+Spire.PDF 3.1.9
+Fix the issue that the picture was incorrect when the image was converted from the PDF file by using the SaveAsImage method.
+Fix the issue that the header of table was incorrect in converted image from PDF by using the SaveAsImage method.
+Fix the issue that SaveAsDrawingImage method drew a redundant page border around the image.
+Fix the error "A generic error occurred in GDI+." occurred when converting PDF to XPS in WPF.
+
+
+Spire.PDF 3.0.59
+Bug solutions:
+Fix the issue that the red boxes and text were lost in converted Image from PDF.
+Fix the issue that the data was cut in converted PDF from HTML.
+Fix the error "The index cannot be less than zero or greater than Count" occurred when merging pdf files.
+Fix the issue that the footer of the page was not printed.
+Fix the error "Arithmetic operation resulted in an overflow." occurred when drawing image in page.
+
+
+Spire.PDF 3.0.43
+New features:
+Add new feature to draw multiple string formats in a single grid cell.
+Add a property Page.ActualSize to get actual size of page.
+Add new method IsBlank() to detect if the content of page is blank.
+
+Bug Solutions:
+Fix the incorrect data issue in image converted from PDF 
+Fix the issue that column name is incorrect in image converted from PDF.
+Improve the time performance for converting HTML to PDF.
+Fix the issue that PdfPageSize.A4 is not actual A4 size.
+Fix the error "Object reference not set to an instance of an object." caused in merging pdf files.
+Fix the issue that the page is added to the end of the existing pdf when adding a blank page to the beginning of an existing PDF
+Fix the issue that it adds additional horizontal scroll bar in HTML converted from PDF
+
+
+
+Spire.PDF 3.0.27
+New features:
+Add new feature to convert html string to PDF.
+Add new feature pdf.SaveAsDrawingImage(pageIndex); to save pdf as DrawingImage for WPF
+
+Bug Solutions:
+Fix the error "object reference not set to an instance of an object" caused in converting PDF to Image.
+Fix the blank output PDF issue after converting HTML to PDF.
+Fix the "Out of memory" exception when using TrueType fonts embedded in the pdf file.
+Fix the error "Parameter is not valid" caused in converting PDF to XPS.
+Fix the issue that the pages render with a strange space in the beginning of the file when displaying PDF file inside a Print Preview Dialog.
+Fix losing the fonts issue after merging two pdf files.
+
+
+
+Spire.PDF 2.9.51--When convert XPS to PDF, the error of missing letters has been fixed.
+
+Spire.PDF 2.9.43 this time offers you a smooth experience with extract image from PDF file. 
+Bug solutions:
+
+    Fixed a bug that PdfPageBase.ExtractImages() method did not refresh the image list after adding new images to PDF.
+    Fixed a bug that the pixel of the extracted images using PdfPageBase.ExtractImages() method was changed.</releaseNotes>
+    <copyright>Copyright © 2014 e-iceblue. All Rights Reserved.</copyright>
+    <language>en-US</language>
+    <tags>PDF application PDF library component control to XPS Image HTML HTML PDF PDF/A</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Spire.PDF" targetFramework=".NETFramework2.0, .NETFramework3.5, .NETFramework4.0, .NETFramework4.0-Client" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
