@@ -14,21 +14,27 @@ namespace csvToInvoice
     {
         static void Main(string[] args)
         {
+            // read the csv file
             System.IO.TextReader readFile = new StreamReader("C:\\Users\\jamie.vanwalsum.BCS\\Source\\Repos\\InvoiceFromCsv\\data folder\\datafile04092014.csv");
             CsvReader reader = new CsvReader(readFile);
 
-            var records = reader.GetRecords<Invoice>().ToList();
+            // convert each line in the csv into a list of invoice objects
+            var invoices = reader.GetRecords<Invoice>().ToList();
 
-            foreach (var rec in records)
+            // loop through each invoice
+            foreach (var inv in invoices)
             {
-                string account = "Account:" + rec.InvoiceId;
-                string amount = "Amount: $" + rec.InvoiceAmount;
-                string name = "Account name: " + rec.InvoiceName;
+                string account = "Account: " + inv.InvoiceId;
+                string amount = "Amount: " + inv.InvoiceAmount;
+                string name = "Account name: " + inv.InvoiceName;
 
-                string filename = rec.InvoiceId + ".pdf";
+                // create the new pdf filename, use the invoice id as the unique identifer
+                string filename = inv.InvoiceId + ".pdf";
 
+                // specify the output path
                 string path = Path.Combine("X:\\Invoices\\", filename);
 
+                // create a new filestream using the path
                 FileStream fs = new FileStream(path, FileMode.Create);
 
                 Document document = new Document(PageSize.A4, 10, 10, 90, 10);
